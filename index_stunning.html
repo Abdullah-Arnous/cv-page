@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Arnous - Digital CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #ffffff);
+      color: #222;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(to right, #d4fc79, #96e6a1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .btn {
+      text-decoration: none;
+      background: #111;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #333;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .pdf-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+      }
+      iframe {
+        height: 65vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-up">
+    <h1>Abdullah Arnous</h1>
+    <p>Building digital futures — one system at a time 🚀</p>
+    <a href="#cv" class="btn">⬇️ View My CV</a>
+  </header>
+
+  <section id="cv" data-aos="fade-up">
+    <div class="about">
+      A passionate MIS graduate focused on transforming business challenges into innovative digital solutions. Let the CV speak.
+    </div>
+    <div class="pdf-actions">
+      <a class="btn" href="Abdullah_Arnous_CV(1).pdf" download>📥 Download PDF</a>
+      <a class="btn" href="Abdullah_Arnous_CV(1).pdf" target="_blank">🔍 View in New Tab</a>
+    </div>
+    <iframe src="Abdullah_Arnous_CV(1).pdf"></iframe>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
